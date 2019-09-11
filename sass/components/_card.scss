@@ -169,7 +169,10 @@
 
   /***********tab and mobile card***********/
 
-  @include respond(tab-port) {
+  //check if its mobile or tab device and if the person cant hover
+ // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+          only screen and (hover:none){
 
     height: auto;
     border-radius: 3px;
